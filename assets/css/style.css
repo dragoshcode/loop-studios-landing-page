@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-//   font-family: 'Alata', sans-serif;
-//   font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
@@ -15,7 +13,6 @@ html {
 }
 
 body {
-//   max-width: 166rem;
   margin: 0 auto;
   min-height: 100vh;
   width: 100%;
@@ -23,10 +20,6 @@ body {
 
 a {
   text-decoration: none;
-
-//   &:focus-visible {
-//     outline: 3px dotted orange;
-//   }
 }
 
 li {
@@ -41,6 +34,6 @@ li {
   display: grid;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
