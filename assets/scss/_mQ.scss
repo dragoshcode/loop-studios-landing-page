@@ -28,3 +28,18 @@
   }
 }
 
+@media only screen and (min-width: 960px) {
+  .hidden--primary {
+    display: block;
+  }
+
+  .hidden--secondary {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1270px){
+    nav{
+        background-color: hsla(0, 0%, 0%, 0.1);
+    }
+}

@@ -34,7 +34,7 @@ li {
   display: grid;
 }
 
-.hidden {
+.hidden--primary {
   display: none;
 }
 
@@ -56,6 +56,15 @@ header nav .logo img {
 }
 header nav .menu img {
   width: clamp(2.5rem, 5vw, 3.15rem);
+}
+header nav ul {
+  align-items: center;
+  gap: 2.5rem;
+}
+header nav ul a {
+  color: white;
+  font-family: "Alata", sans-serif;
+  font-size: 1.45rem;
 }
 header .hero {
   flex-grow: 1;
@@ -94,5 +103,19 @@ header .hero h1 {
 @media only screen and (min-width: 1744px) {
   .hero {
     width: 40.85vw;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .hidden--primary {
+    display: block;
+  }
+
+  .hidden--secondary {
+    display: none;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1270px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }

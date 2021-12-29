@@ -12,15 +12,23 @@ header {
     align-items: center;
     padding: 3rem 2.5rem;
 
-    .logo img{
-      width: clamp(12.5rem, 30vw, 17rem); 
+    .logo img {
+      width: clamp(12.5rem, 30vw, 17rem);
     }
 
-    .menu img{
-      width: clamp(2.5rem, 5vw, 3.15rem); 
+    .menu img {
+      width: clamp(2.5rem, 5vw, 3.15rem);
     }
 
-    
+    ul {
+      align-items: center;
+      gap: 2.5rem;
+      a {
+        color: v.$wt;
+        font-family: "Alata", sans-serif;
+        font-size: 1.45rem;
+      }
+    }
   }
 
   .hero {
