@@ -37,3 +37,62 @@ li {
 .hidden {
   display: none;
 }
+
+header {
+  background-image: url(/assets/images/mobile/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65rem;
+  flex-direction: column;
+}
+header nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2.5rem;
+}
+header nav .logo img {
+  width: clamp(12.5rem, 30vw, 17rem);
+}
+header nav .menu img {
+  width: clamp(2.5rem, 5vw, 3.15rem);
+}
+header .hero {
+  flex-grow: 1;
+  align-items: center;
+  padding: 3rem;
+}
+header .hero h1 {
+  padding: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: clamp(3.2rem, 7.7vw, 7.5rem);
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid white;
+}
+
+@media only screen and (min-width: 840px) {
+  header {
+    background-image: url(/assets/images/desktop/image-hero.jpg);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .hero {
+    width: 68vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    width: 58vw;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .hero {
+    width: 48vw;
+  }
+}
+@media only screen and (min-width: 1744px) {
+  .hero {
+    width: 40.85vw;
+  }
+}

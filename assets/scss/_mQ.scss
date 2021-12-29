@@ -1,0 +1,30 @@
+@media only screen and (min-width: 840px) {
+  header {
+    background-image: url(/assets/images/desktop/image-hero.jpg);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .hero {
+    width: 68vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    width: 58vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero {
+    width: 48vw;
+  }
+}
+
+@media only screen and (min-width: 1744px) {
+  .hero {
+    width: 40.85vw;
+  }
+}
+

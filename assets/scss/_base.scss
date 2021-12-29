@@ -1,2 +1,39 @@
 @use "variables" as v;
 
+header {
+  background-image: url(/assets/images/mobile/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65rem;
+  flex-direction: column;
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2.5rem;
+
+    .logo img{
+      width: clamp(12.5rem, 30vw, 17rem); 
+    }
+
+    .menu img{
+      width: clamp(2.5rem, 5vw, 3.15rem); 
+    }
+
+    
+  }
+
+  .hero {
+    flex-grow: 1;
+    align-items: center;
+    padding: 3rem;
+    h1 {
+      padding: 2rem;
+      color: v.$wt;
+      text-transform: uppercase;
+      font-size: clamp(3.2rem, 7.7vw, 7.5rem);
+      font-family: "Josefin Sans", sans-serif;
+      border: 1px solid v.$wt;
+    }
+  }
+}
