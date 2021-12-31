@@ -5,7 +5,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65rem;
+  min-height: 100vh;
   flex-direction: column;
   nav {
     justify-content: space-between;
@@ -27,6 +27,11 @@ header {
         color: v.$wt;
         font-family: "Alata", sans-serif;
         font-size: clamp(1.1rem, 1.6vw, 1.7rem);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: hsla(0, 0%, 100%, 0.66);
+        }
       }
     }
   }
@@ -43,5 +48,39 @@ header {
       font-family: "Josefin Sans", sans-serif;
       border: 1px solid v.$wt;
     }
+  }
+}
+
+main {
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+  // ! remove later
+}
+
+.presentation {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.presentation__content img {
+  width: 100%;
+}
+
+.presentation__data {
+  margin-top: 4rem;
+  text-align: center;
+  flex-direction: column;
+  gap: 2rem;
+  h2 {
+    font-size: 3.2rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    line-height: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+    font-family: "Alata", sans-serif;
+    color: v.$dk-gy;
+    line-height: 2.4rem;
   }
 }

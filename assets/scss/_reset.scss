@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-//   font-family: 'Alata', sans-serif;
-//   font-family: 'Josefin Sans', sans-serif;
+  //   font-family: 'Alata', sans-serif;
+  //   font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
@@ -22,10 +22,13 @@ body {
 
 a {
   text-decoration: none;
+  &:focus-visible {
+    outline: 3px dotted rgb(242, 62, 242);
+  }
+}
 
-//   &:focus-visible {
-//     outline: 3px dotted orange;
-//   }
+button:focus-visible {
+  outline: 3px dotted rgb(242, 62, 242);
 }
 
 li {
@@ -40,6 +43,6 @@ li {
   display: grid;
 }
 
-.hidden--primary{
+.hidden--primary {
   display: none;
 }

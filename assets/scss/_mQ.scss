@@ -1,3 +1,65 @@
+@use "variables" as v;
+
+@media only screen and (min-width: 500px) {
+  .presentation__data {
+    h2 {
+      font-size: clamp(3.5rem, 7.5vw, 5rem);
+      line-height: clamp(3rem, 7.5vw, 5rem);
+      padding-inline: 3rem;
+    }
+
+    p {
+      font-size: clamp(1.6rem, 2.55vw, 4rem);
+      line-height: clamp(2rem, 5vw, 5rem);
+      padding-inline: 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .presentation__data p {
+    padding-inline: 6rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  header nav {
+    padding: 6rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 832px) {
+  .presentation__content {
+    grid-template-columns: [first-c] 42% [second-c] 13% [third-c] 45% [forth-c] auto;
+    grid-template-rows: [first-r] 1fr [second-r] 2fr [third-r] auto;
+
+    figure {
+      grid-column: first-c / third-c;
+      grid-row: first-r / third-r;
+    }
+
+    .presentation__data {
+      grid-column: second-c / forth-c;
+      grid-row: second-r / third-r;
+      background-color: v.$wt;
+      margin-top: 0;
+      text-align: left;
+      padding-top: 4rem;
+      padding-left: 4rem;
+      h2 {
+        font-size: 3.3rem;
+        line-height: 3rem;
+        padding-inline: 0;
+      }
+      p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        padding-inline: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 840px) {
   header {
     background-image: url(/assets/images/desktop/image-hero.jpg);
@@ -10,6 +72,15 @@
   }
 }
 
+@media only screen and (min-width: 924px) {
+  .presentation__content {
+    .presentation__data {
+      padding-top: 6rem;
+      padding-left: 6rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .hidden--primary {
     display: block;
@@ -17,6 +88,30 @@
 
   .hidden--secondary {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .presentation__content {
+    .presentation__data {
+      h2 {
+        font-size: 4.2rem;
+        line-height: 4rem;
+      }
+      p {
+        font-size: 1.7rem;
+        line-height: 2.25rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .presentation__content {
+    .presentation__data {
+      padding-top: 7.7rem;
+      padding-left: 8rem;
+    }
   }
 }
 
@@ -32,18 +127,60 @@
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  .presentation__content {
+    .presentation__data {
+      h2 {
+        font-size: 5rem;
+        line-height: 4.5rem;
+      }
+      p {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .hero {
     width: 52vw;
   }
 }
 
-@media only screen and (min-width: 1660px) {
-  header {
-    height: 85rem;
-    nav {
-      padding: 6rem 14rem;
+@media only screen and (min-width: 1410px) {
+  .presentation__content {
+    .presentation__data {
+      h2 {
+        font-size: 5.5rem;
+        line-height: 5rem;
+      }
+      p {
+        font-size: 2.3rem;
+        line-height: 3.6rem;
+      }
     }
+  }
+}
+
+@media only screen and (min-width: 1635px) {
+  .presentation__content {
+    .presentation__data {
+      h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+      p {
+        font-size: 2.5rem;
+        line-height: 3.7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1660px) {
+  header nav {
+    padding: 6rem 14rem;
   }
 
   .hero {
@@ -51,8 +188,36 @@
   }
 }
 
+@media only screen and (min-width: 1760px) {
+  .presentation__content {
+    .presentation__data {
+      h2 {
+        font-size: 7rem;
+        line-height: 7rem;
+      }
+      p {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1800px) {
   .hero {
     width: 40.85vw;
+  }
+}
+
+@media only screen and (min-width: 1910px) {
+  .presentation__content {
+    .presentation__data {
+      padding-top: 12.1rem;
+      padding-left: 12.1rem;
+      p {
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+      }
+    }
   }
 }
