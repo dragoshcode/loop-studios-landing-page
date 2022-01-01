@@ -98,7 +98,7 @@ main {
 
 .presentation {
   width: 95%;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .presentation__content img {
