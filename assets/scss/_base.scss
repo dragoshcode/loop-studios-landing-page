@@ -52,9 +52,7 @@ header {
 }
 
 main {
-  margin-top: 5rem;
-  margin-bottom: 30rem;
-  // ! remove later
+  margin-block-start: 5rem;
 }
 
 .presentation__content img {
@@ -195,8 +193,19 @@ main {
         ),
         url(/assets/images/mobile/image-fisheye.jpg) top/cover no-repeat;
     }
-    // &-card{
-    //   text-align: left;
-    // }
+  }
+}
+
+footer{
+  flex-direction: column;
+  background-color: v.$bk;
+  padding-block: 4rem;
+  padding-inline: 5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .container--primary__logo img{
+    width: 15rem;
   }
 }
