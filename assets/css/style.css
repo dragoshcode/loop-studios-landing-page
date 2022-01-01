@@ -196,6 +196,7 @@ main {
 }
 
 footer {
+  margin-top: 18rem;
   flex-direction: column;
   background-color: black;
   padding-block: 4rem;
@@ -203,9 +204,33 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 4.75rem;
+}
+footer .container--primary,
+footer .container--secondary {
+  flex-direction: column;
+  gap: 2.8rem;
 }
 footer .container--primary__logo img {
   width: 15rem;
+}
+footer ul {
+  flex-direction: column;
+  gap: 2rem;
+}
+footer ul a {
+  font-size: 1.4rem;
+  color: white;
+  font-family: "Alata", sans-serif;
+}
+footer .container--secondary__socials figure {
+  justify-content: center;
+  gap: 2rem;
+}
+footer .container--secondary__copyright {
+  color: #8c8c8c;
+  font-family: "Alata", sans-serif;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 500px) {
@@ -270,6 +295,27 @@ footer .container--primary__logo img {
 
   .creations__cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer nav {
+    margin-top: 0;
+  }
+  footer ul {
+    flex-direction: row;
+  }
+  footer .container--primary {
+    text-align: left;
+  }
+  footer .container--secondary__socials figure {
+    justify-content: end;
+  }
+  footer .container--primary,
+footer .container--secondary {
+    gap: 2.1rem;
   }
 }
 @media only screen and (min-width: 840px) {
@@ -410,6 +456,23 @@ footer .container--primary__logo img {
 
   .hero {
     margin-left: 11rem;
+  }
+
+  footer {
+    padding-inline: 12rem;
+  }
+  footer .container--primary__logo img {
+    width: 20rem;
+  }
+  footer ul a {
+    font-size: 1.65rem;
+  }
+  footer .container--secondary__socials figure img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  footer .container--secondary__copyright {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1760px) {

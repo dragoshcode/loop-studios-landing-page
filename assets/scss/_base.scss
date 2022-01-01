@@ -196,7 +196,8 @@ main {
   }
 }
 
-footer{
+footer {
+  margin-top: 18rem;
   flex-direction: column;
   background-color: v.$bk;
   padding-block: 4rem;
@@ -204,8 +205,37 @@ footer{
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 4.75rem;
 
-  .container--primary__logo img{
+  .container--primary,
+  .container--secondary {
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  .container--primary__logo img {
     width: 15rem;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 2rem;
+
+    a {
+      font-size: 1.4rem;
+      color: v.$wt;
+      font-family: "Alata", sans-serif;
+    }
+  }
+
+  .container--secondary__socials figure {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .container--secondary__copyright {
+    color: v.$dk-gy;
+    font-family: "Alata", sans-serif;
+    font-size: 1.2rem;
   }
 }
