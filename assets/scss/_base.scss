@@ -57,11 +57,6 @@ main {
   // ! remove later
 }
 
-.presentation {
-  width: 95%;
-  margin-inline: auto;
-}
-
 .presentation__content img {
   width: 100%;
 }
@@ -82,5 +77,126 @@ main {
     font-family: "Alata", sans-serif;
     color: v.$dk-gy;
     line-height: 2.4rem;
+  }
+}
+
+.creations {
+  margin-top: 10rem;
+
+  &__heading {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: clamp(3.5rem, 8vw, 5.7rem);
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+    }
+
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 155rem;
+      text-transform: uppercase;
+      display: inline-block;
+      color: v.$bk;
+      border: 1px solid v.$bk;
+      padding: 1rem 4rem;
+      font-size: 1.5rem;
+      font-family: "Alata", sans-serif;
+      letter-spacing: 0.4rem;
+    }
+  }
+
+  &__cards {
+    gap: 3.5rem;
+    margin-top: 6rem;
+
+    &-card {
+      width: 100%;
+      height: 14.5rem;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+
+      h3 {
+        color: v.$wt;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        margin-top: 2.75rem;
+        margin-left: 2rem;
+      }
+    }
+    .earth {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-deep-earth.jpg) top/cover no-repeat;
+    }
+    .arcade {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-night-arcade.jpg) top/cover no-repeat;
+    }
+    .soccer {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-soccer-team.jpg) top/cover no-repeat;
+    }
+    .race {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-grid.jpg) top/cover no-repeat;
+    }
+    .vr {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-from-above.jpg) top/cover no-repeat;
+    }
+    .borealis {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-pocket-borealis.jpg) top/cover no-repeat;
+    }
+    .curiosity {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-curiosity.jpg) top/cover no-repeat;
+    }
+    .fisheye {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/mobile/image-fisheye.jpg) top/cover no-repeat;
+    }
+    // &-card{
+    //   text-align: left;
+    // }
   }
 }
