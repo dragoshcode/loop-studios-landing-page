@@ -77,10 +77,22 @@ header nav ul a {
   color: white;
   font-family: "Alata", sans-serif;
   font-size: clamp(1.1rem, 1.6vw, 1.7rem);
-  transition: 0.3s ease-in-out;
+  position: relative;
 }
-header nav ul a:hover {
-  color: rgba(255, 255, 255, 0.66);
+header nav ul a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0.2rem;
+  background-color: white;
+  margin-top: 1.7rem;
+  transition: 0.2s ease-in-out;
+}
+header nav ul a:hover::before {
+  width: 2.25rem;
 }
 header .hero {
   flex-grow: 1;
@@ -100,8 +112,15 @@ main {
   margin-block-start: 5rem;
 }
 
-.presentation__content img {
+.presentation__content figure {
+  z-index: 1;
+}
+.presentation__content figure img {
   width: 100%;
+  transition: 0.2s ease-in-out;
+}
+.presentation__content figure img:hover {
+  transform: rotate(5deg);
 }
 
 .presentation__data {
@@ -109,6 +128,11 @@ main {
   text-align: center;
   flex-direction: column;
   gap: 2rem;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+.presentation__data:hover {
+  transform: rotate(-5deg);
 }
 .presentation__data h2 {
   font-size: 3.2rem;
@@ -149,6 +173,11 @@ main {
   font-size: 1.5rem;
   font-family: "Alata", sans-serif;
   letter-spacing: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+.creations__heading a:hover {
+  color: white;
+  background-color: black;
 }
 .creations__cards {
   gap: 3.5rem;
@@ -161,6 +190,14 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.creations__cards-card:hover {
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.7);
+}
+.creations__cards-card:hover h3 {
+  color: black;
 }
 .creations__cards-card h3 {
   color: white;
@@ -169,6 +206,7 @@ main {
   font-family: "Josefin Sans", sans-serif;
   margin-top: 2.75rem;
   margin-left: 2rem;
+  transition: 0.2s ease-in-out;
 }
 .creations__cards .earth {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%), url(/assets/images/mobile/image-deep-earth.jpg) top/cover no-repeat;
@@ -222,10 +260,45 @@ footer ul a {
   font-size: 1.4rem;
   color: white;
   font-family: "Alata", sans-serif;
+  position: relative;
+}
+footer ul a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0.2rem;
+  background-color: white;
+  margin-top: 1.7rem;
+  transition: 0.2s ease-in-out;
+}
+footer ul a:hover::before {
+  width: 2.25rem;
 }
 footer .container--secondary__socials figure {
   justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+footer .container--secondary__socials figure a {
+  position: relative;
+}
+footer .container--secondary__socials figure a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0.2rem;
+  background-color: white;
+  margin-top: 1.7rem;
+  transition: 0.2s ease-in-out;
+}
+footer .container--secondary__socials figure a:hover::before {
+  width: 2.25rem;
 }
 footer .container--secondary__copyright {
   color: #8c8c8c;
