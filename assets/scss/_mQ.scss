@@ -68,6 +68,18 @@
       }
     }
   }
+
+  .creations {
+    &__heading {
+      a {
+        top: 85rem;
+      }
+    }
+  }
+
+  .creations__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 840px) {
@@ -112,6 +124,105 @@
         font-size: 1.7rem;
         line-height: 2.25rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+    .creations{
+        &__heading{
+            justify-content: space-between;
+            a{
+                position: static;
+                transform: translate(0);
+            }
+        }
+    }
+
+  .creations__cards {
+    grid-template-columns: repeat(4, 1fr);
+
+    &-card{
+        height: 45rem;
+        align-items: end;
+
+        h3{
+            margin-bottom: 3rem;
+            margin-left: 3rem;
+        }
+    }
+
+    .earth {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-deep-earth.jpg) top/cover no-repeat;
+    }
+
+    .arcade {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-night-arcade.jpg) top/cover no-repeat;
+    }
+
+    .soccer {
+      background: linear-gradient(
+        0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-soccer-team.jpg) top/cover no-repeat;
+    }
+
+    .race {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-grid.jpg) top/cover no-repeat;
+    }
+
+    .vr {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-from-above.jpg) top/cover no-repeat;
+    }
+
+    .borealis {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-pocket-borealis.jpg) top/cover
+          no-repeat;
+    }
+
+    .curiosity {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-curiosity.jpg) top/cover no-repeat;
+    }
+
+    .fisheye {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(/assets/images/desktop/image-fisheye.jpg) top/cover no-repeat;
     }
   }
 }
@@ -210,6 +321,17 @@
         line-height: 4rem;
       }
     }
+  }
+
+  .creations{
+      &__cards{
+          &-card{
+              height: 75rem;
+              h3{
+                  font-size: 3.65rem;
+              }
+          }
+      }
   }
 }
 
